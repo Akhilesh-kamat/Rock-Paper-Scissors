@@ -4,8 +4,8 @@ const ResultDisplay = document.getElementById('Result');
 
 const Button = document.querySelectorAll('button');
 
-const ClickSound = new Audio("click.wav");
-const WinSound = new Audio("win.wav");
+const ClickSound = new Audio("Sound Effects/click.wav");
+const WinSound = new Audio("Sound Effects/win.wav");
 
 
 
@@ -17,7 +17,7 @@ let i;
 let RandomGen;
 
 
-const GameImages = ["Rock.png", "Paper.png", "Scissors.png"]
+const GameImages = ["Images/Rock.png", "Images/Paper.png", "Images/Scissors.png"]
 
 Button.forEach(Choice => Choice.addEventListener('click', (e) => {
 
@@ -45,31 +45,31 @@ const GenrateComputerChoice = () => {
 
 const Result = () => {
     if (i == 0 && RandomGen == 2) {
-        ResultDisplay.innerHTML = "You are Winner"
+        ResultDisplay.innerHTML = "You Won"
     }
     if (i == 1 && RandomGen == 0) {
-        ResultDisplay.innerHTML = "You are Winner"
+        ResultDisplay.innerHTML = "You Won"
     }
     if (i == 2 && RandomGen == 1) {
-        ResultDisplay.innerHTML = "You are Winner"
+        ResultDisplay.innerHTML = "You Won"
     }
     if (i == RandomGen) {
 
-        ResultDisplay.innerHTML = "It's Draw"
+        ResultDisplay.innerHTML = "It's a Draw"
     }
     else if (i == 0 && RandomGen == 1) {
-        ResultDisplay.innerHTML = "You are Losser"
+        ResultDisplay.innerHTML = "You lose"
     }
     else if (i == 1 && RandomGen == 2) {
-        ResultDisplay.innerHTML = "You are Losser"
+        ResultDisplay.innerHTML = "You lose"
     }
     else if (i == 2 && RandomGen == 0) {
-        ResultDisplay.innerHTML = "You are Losser"
+        ResultDisplay.innerHTML = "You lose"
     }
 
-    if (ResultDisplay.innerHTML == "You are Winner"){
+    if (ResultDisplay.innerHTML == "You Won") {
         WinSound.play();
-        
+
     }
 
 
