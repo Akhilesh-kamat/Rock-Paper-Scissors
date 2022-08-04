@@ -72,6 +72,9 @@ h2 {
     font-size: 3rem;
     font-weight: 900;
 }
+.sub-heading-2{
+    color: #f2cfbf
+}
 
 #Computer-choice {
     position: relative;
@@ -146,7 +149,7 @@ h2 {
     #container .image {
         height: 14rem;
         width: 14rem;
-        top: 4rem;
+        top: 0.2rem;
     }
 
     #Computer-choice {
@@ -168,6 +171,7 @@ h2 {
         /* margin: 1rem; */
         margin: 0 0.2rem;
     }
+    
 
     #Result {
         font-size: 6rem;
